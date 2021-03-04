@@ -51,6 +51,10 @@ namespace Calculator
             this.button_4 = new System.Windows.Forms.Button();
             this.button_1 = new System.Windows.Forms.Button();
             this.button_del = new System.Windows.Forms.Button();
+            this.button_CE = new System.Windows.Forms.Button();
+            this.button_mr = new System.Windows.Forms.Button();
+            this.button_mc = new System.Windows.Forms.Button();
+            this.button_MS = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBox1
@@ -296,11 +300,60 @@ namespace Calculator
             this.button_del.UseVisualStyleBackColor = false;
             this.button_del.Click += new System.EventHandler(this.button_del_Click);
             // 
+            // button_CE
+            // 
+            this.button_CE.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button_CE.Location = new System.Drawing.Point(137, 233);
+            this.button_CE.Name = "button_CE";
+            this.button_CE.Size = new System.Drawing.Size(101, 77);
+            this.button_CE.TabIndex = 23;
+            this.button_CE.Text = "CE";
+            this.button_CE.UseVisualStyleBackColor = true;
+            this.button_CE.Click += new System.EventHandler(this.button_CE_Click);
+            // 
+            // button_mr
+            // 
+            this.button_mr.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button_mr.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button_mr.Location = new System.Drawing.Point(85, 316);
+            this.button_mr.Name = "button_mr";
+            this.button_mr.Size = new System.Drawing.Size(46, 77);
+            this.button_mr.TabIndex = 24;
+            this.button_mr.Text = "MR";
+            this.button_mr.UseVisualStyleBackColor = true;
+            this.button_mr.Click += new System.EventHandler(this.button_mr_Click);
+            // 
+            // button_mc
+            // 
+            this.button_mc.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button_mc.Location = new System.Drawing.Point(30, 316);
+            this.button_mc.Name = "button_mc";
+            this.button_mc.Size = new System.Drawing.Size(49, 77);
+            this.button_mc.TabIndex = 25;
+            this.button_mc.Text = "MC";
+            this.button_mc.UseVisualStyleBackColor = true;
+            this.button_mc.Click += new System.EventHandler(this.button_mc_Click);
+            // 
+            // button_MS
+            // 
+            this.button_MS.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button_MS.Location = new System.Drawing.Point(30, 233);
+            this.button_MS.Name = "button_MS";
+            this.button_MS.Size = new System.Drawing.Size(101, 77);
+            this.button_MS.TabIndex = 26;
+            this.button_MS.Text = "MS";
+            this.button_MS.UseVisualStyleBackColor = true;
+            this.button_MS.Click += new System.EventHandler(this.button_MS_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(479, 751);
+            this.Controls.Add(this.button_MS);
+            this.Controls.Add(this.button_mc);
+            this.Controls.Add(this.button_mr);
+            this.Controls.Add(this.button_CE);
             this.Controls.Add(this.button_1);
             this.Controls.Add(this.button_4);
             this.Controls.Add(this.button_7);
@@ -354,6 +407,10 @@ namespace Calculator
         private System.Windows.Forms.Button button_7;
         private System.Windows.Forms.Button button_4;
         private System.Windows.Forms.Button button_1;
+        private System.Windows.Forms.Button button_CE;
+        private System.Windows.Forms.Button button_mr;
+        private System.Windows.Forms.Button button_mc;
+        private System.Windows.Forms.Button button_MS;
     }
 }
 

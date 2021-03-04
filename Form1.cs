@@ -16,10 +16,14 @@ namespace Calculator
         public string act;
         public string left;
         public double deg;
+        public string memory;
         public Form1()
         {
+            memory = "0";
             flag = false;
             InitializeComponent();
+            button_mr.Enabled = false;
+            button_mc.Enabled = false;
         }
 
         private void button_0_Click(object sender, EventArgs e)
@@ -128,6 +132,30 @@ namespace Calculator
         {
             textBox1.Text = "0";
             left = "0";
+        }
+
+        private void button_CE_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = "0";
+        }
+
+        private void button_MS_Click(object sender, EventArgs e)
+        {
+            memory = textBox1.Text;
+            button_mr.Enabled = true;
+            button_mc.Enabled = true;
+        }
+
+        private void button_mr_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = memory;
+        }
+
+        private void button_mc_Click(object sender, EventArgs e)
+        {
+            memory = "0";
+            button_mr.Enabled = false;
+            button_mc.Enabled = false;
         }
     }
 }
