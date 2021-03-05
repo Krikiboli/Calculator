@@ -349,7 +349,7 @@ namespace Calculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(479, 751);
+            this.ClientSize = new System.Drawing.Size(476, 752);
             this.Controls.Add(this.button_MS);
             this.Controls.Add(this.button_mc);
             this.Controls.Add(this.button_mr);
@@ -376,6 +376,8 @@ namespace Calculator
             this.Controls.Add(this.button_0);
             this.Controls.Add(this.button_znak);
             this.Controls.Add(this.textBox1);
+            this.MaximumSize = new System.Drawing.Size(494, 799);
+            this.MinimumSize = new System.Drawing.Size(494, 0);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
